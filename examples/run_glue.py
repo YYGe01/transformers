@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """ Finetuning the library models for sequence classification on GLUE (Bert, XLM, XLNet, RoBERTa, Albert, XLM-RoBERTa)."""
-
-
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 import dataclasses
 import logging
-import os
+
 from dataclasses import dataclass, field
 from typing import Dict, Optional
 
